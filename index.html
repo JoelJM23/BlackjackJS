@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blackjack</title>
+	<link rel="stylesheet" type="text/css" href="estilobj.css">
+</head>
+<body>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div id="alerta" class="alert-container">
+    <p id="aviso"></p>
+    <button onclick="ocultarAlerta()">OK</button>
+    </div>
+
+	<div class="global">
+		<h2 id="dinero">Pejecoins: 100</h2>
+		<div class="anuncio" id="anuncio"></div>
+		<div class="contenedor">
+			<div class="jugador">
+				<h1>Jugador</h1>
+				<h3 id="ScoreP">Puntos: </h3>
+				<div class="cartasJug" id="cartasJug">
+				</div>
+
+				<div id="actions">
+					<button onclick = iniciar() id="Iniciar">Iniciar</button>
+					<button onclick = carta() id="Carta" style="display: none;">Pedir Carta</button>
+					<button onclick = doble() id="Duplicar" style="display: none;">Duplicar Apuesta</button>
+					<button onclick = plantarse() id="Plantarse" style="display: none;">Plantarse</button>
+					
+				</div>
+				<div class="apostar" id="apostar"><strong id="mensaje">Apuesta:</strong><input type="number" id="apuesta" min="10" step="10"></div>
+			</div>
+			<div class="dealer">
+				<h1>Dealer</h1>
+				<h3 id="ScoreD">Puntos: </h3>
+				<div class="cartasDeal" id="cartasDeal">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="blackjackjs.js"></script>
+
+</body>
+</html>

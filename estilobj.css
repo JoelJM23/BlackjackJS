@@ -1,0 +1,102 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: content-box;
+}
+body{
+	background: url('img/fondom.webp') no-repeat center center fixed;
+	background-size: cover;
+}
+.global{
+	position: relative;
+	text-align: center;
+}
+.anuncio{
+	height: 20px;
+	margin-top: 30px;
+}
+h2{
+	border-radius: 5px;
+	color: white;
+	padding: 5px;
+	display: inline-block;
+}
+.contenedor{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+}
+img{
+	margin:10px 5px 10px 0;
+	height: 140px;
+	border-radius: 6px;
+}
+.jugador, .dealer{
+	width: 40vw;
+	height: 70vh;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+	margin-top:5%;
+	text-align: center;
+	padding: 20px;
+}
+.jugador{
+	margin-right: 20px;
+}
+.dealer{
+	margin-left: 20px;
+}
+.cartasJug{
+	height: 340px;
+}
+.apostar{
+	margin-top: 10px;
+	background: white;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 5px;
+}
+#dinero{
+	position: absolute;
+	left: 5vw;
+}
+/*Estilo para la alerta*/
+.alert-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 300px;
+    z-index: 20;
+    font-size: 19px;
+}
+
+/* Estilos para el fondo oscuro en alerta*/
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+button{
+	border-radius: 5px;
+	margin: 10px 5px 0;
+	padding: 5px;
+	font-size: 15px;
+}
+input{
+	margin: 0 5px;
+	border-radius: 5px;
+	padding: 3px;
+}
